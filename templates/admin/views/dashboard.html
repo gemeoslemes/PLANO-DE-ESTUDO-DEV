@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block corpo %}
+<link rel="stylesheet" href="../../../../treinamento/templates/admin/views/assets/css/admin.css">
+    
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3"> <!-- Aumente o valor aqui para aumentar a largura da barra lateral -->
+            {% include 'menu.html' %}
+        </div>
+        <div class="col-lg-9"> <!-- O restante do espaço será ocupado pelo conteúdo principal -->
+            <header class="bg-white d-flex justify-content-end">
+                <h2>
+                    <label for="menu">
+                        <i class="fa-solid fa-bars-staggered" tooltip="tooltip" title="MENU"></i>
+                    </label>
+                </h2>
+                <div class="btn-group mb-2 ms-auto">
+                    <button type="button" class="btn bg-white dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                        <i class="fa-solid fa-user me-2"></i> Victor Lemes
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li>
+                            <a class="dropdown-item" href="#" tooltip="tooltip" title="Perfil">Perfil</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item text-danger" href="#" tooltip="tooltip" title="Sair">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <div class="container-fluid container-topo">
+                <!-- Conteúdo do topo aqui -->
+            </div>
+
+            <main class="mt-5">
+                {% block conteudo %}
+                <div class="conteudo-dashboard float-right largura-80"> <!-- Adicione a classe float-right -->
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-header bg-white border-0">
+                            <h5 class="card-title">DashBoard</h5>
+                        </div>
+                        <div class="card-body">
+                            Conteúdo de desenvolvimento
+                        </div>
+                    </div>
+                </div>
+                {% endblock %}
+            </main>
+        </div>
+    </div>
+    
+    {% include 'rodape.html' %}
+</div>
+{% endblock %}

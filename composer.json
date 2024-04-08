@@ -1,0 +1,27 @@
+{
+    "name": "vlblog/cursophp8",
+    "description": "Curso de PHP 8",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "system\\": "system/"    
+        }, 
+        "files": [
+            "system/configuracao.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Victor",
+            "email": "victor@gmail.com",
+            "homepage": "https://www.porfile.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "pecee/simple-router": "dev-master",
+        "twig/twig": "^3.0"
+    }
+}

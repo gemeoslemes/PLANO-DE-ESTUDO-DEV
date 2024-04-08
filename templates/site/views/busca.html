@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="container my-5">
+   <div class="row">
+      <div class="col-md-9">
+        {% if posts %}
+        <div class="row">
+         {% for post in posts %}
+         <div class="col-md-12">
+            <div class="card mb-3">
+               <div class="card-body">
+                  <h5 class="card-title" onmouseover="showTitle('{{ post.titulo }}')" onmouseout="hideTitle()">{{ post.titulo }}</h5>
+                  <p class="card-text">{{ post.texto }}</p>
+                  </div>
+            </div>
+         </div>
+         {% endfor %}
+      </div>
+
+        {% else %}
+        <div class="alert alert-warning" role="alert">
+         Sua busca não retornou nenhum resultado! Tente buscar com uma palavra diferente.
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-3">
+         {% include 'sidebar.html' %}
+      </div>
+   </div>
+</div>
+
+<script src="./assets/js/site.js"></script>
+
+{% endblock %}

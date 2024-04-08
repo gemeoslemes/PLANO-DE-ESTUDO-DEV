@@ -1,0 +1,82 @@
+
+.footer {
+    margin-top: auto;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: left 0.3s ease;
+  z-index: 1; /* Defina um valor menor para que outros elementos apareçam sobre o menu */
+}
+
+.sidebarMenu {
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+}
+
+.sidebarMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebarMenu ul li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #555;
+}
+
+.sidebarMenu ul li.sidebarTitulo {
+  font-weight: bold;
+  color: #fff;
+  background-color: #222;
+}
+
+.sidebarMenu ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebarMenu ul li a:hover {
+  background-color: #444;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem 0;
+  
+}
+.nav-item .custom-hover:hover {
+  color: orange !important; /* Adiciona cor laranja no hover */
+}
+
+
+
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    left: -250px; /* Esconder a barra lateral */
+  }
+  
+  .menuIcon {
+    display: block; /* Mostrar o ícone de hambúrguer */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999; /* Colocar acima dos outros elementos */
+    color: #fff;
+    font-size: 30px;
+  }
+
+  /* Exibir a barra lateral quando o ícone de hambúrguer é clicado */
+  #menu:checked ~ .sidebar {
+    left: 0;
+  }
+}

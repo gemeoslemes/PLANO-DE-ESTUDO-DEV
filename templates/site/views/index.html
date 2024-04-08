@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+<div class="container my-5">
+   <div class="row">
+      <div class="col-md-9">
+         <div class="row">
+            {% for post in posts %}
+            <div class="col-md-4">
+               <div class="card mb-3">
+                  <div class="card-body">
+                     <h5 class="card-title" onmouseover="showTitle('{{ post.titulo }}')" onmouseout="hideTitle()">{{ post.titulo }}</h5>
+                     <p class="card-text">{{ resumirTexto(post.texto, 70) }}</p>
+                     <a href="{{ url('post/')~post.id }}" class="btn btn-primary">Ler mais</a>
+                  </div>
+               </div>
+            </div>
+            {% endfor %}
+         </div>
+      </div>
+      <div class="col-md-3">
+         {% include 'sidebar.html' %}
+      </div>
+   </div>
+</div>
+
+<script src="{{url('/templates/site/views/assets/js/site.js')}}"></script>
+<script src="../../../../treinamento/templates/site/assets/js/scripts.js"></script>
+
+{% endblock %}

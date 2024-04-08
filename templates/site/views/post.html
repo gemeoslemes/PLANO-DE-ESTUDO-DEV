@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block conteudo %}
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="card mb-4">
+        <div class="card-body">
+          <h4>{{ post.titulo }}</h4>
+          {{ post.texto }}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <p>{{ post.categoria }}</p>
+
+      {% include 'sidebar.html' %}
+    </div>
+  </div>
+</div>
+{% endblock %}
