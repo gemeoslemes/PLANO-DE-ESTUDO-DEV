@@ -55,3 +55,59 @@
   3. Como um desenvolvedor autodidata, quero poder criar e acompanhar um plano de estudos personalizado para me organizar 
   e alcançar meus objetivos de ensinar de forma eficiente.
 </p>
+<br>
+<h1>Prazos para o desenvovimento</h1>
+<h2>Desenvolvedor Back-end: </h2>
+
+<b>1 - Gerenciamento de Perfil do Desenvolvedor:</b>
+<ul>
+  <li>Implementação do sistema de cadastro e login de usuários: 20 horas</li>
+  <li>Desenvolvimento da funcionalidade de edição de perfil: 15 horas</li>
+  <li>Implementação da funcionalidade de definição de objetivos de aprendizado: 10 horas</li>
+</ul>
+<p>Subtotal: 45 horas</p>
+
+<b>2 - Busca e Recomendação de Recursos de Aprendizado:</b>
+<ul>
+  <li>Implementação do sistema de busca por categorias específicas: 20 horas</li>
+  <li>Desenvolvimento da funcionalidade de recomendação de recursos: 25 horas</li>
+</ul>
+<p>Subtotal: 45 horas</p>
+
+<b>3 - Criação e Acompanhamento de Plano de Estudos:</b>
+<ul>
+  <li>Desenvolvimento da funcionalidade de criação de planos de estudos: 30 horas</li>
+  <li>Implementação da adição de recursos aos planos de estudos: 20 horas</li>
+  <li>Desenvolvimento da funcionalidade de acompanhamento do progresso: 25 horas</li>
+</ul>
+<p>Subtotal: 75 horas</p>
+
+<b>Total para o Desenvolvedor Backend: 165 horas</b>
+
+<br>
+<h2>Desenvolvedor Frontend:</h2>
+
+<b>1 - Gerenciamento de Perfil do Desenvolvedor:</b>
+<ul>
+  <li>Implementação da interface de cadastro e login de usuários: 15 horas</li>
+  <li>Desenvolvimento da interface de edição de perfil: 10 horas</li>
+  <li>Criação da interface para definição de objetivos de aprendizado: 10 horas</li>
+</ul>
+<p>Subtotal: 35 horas</p>
+
+<b>2 - Busca e Recomendação de Recursos de Aprendizado:</b>
+<ul>
+  <li>Desenvolvimento da interface de busca por categorias: 15 horas</li>
+  <li>Implementação da interface de recomendação de recursos: 20 horas</li>
+</ul>
+<p>Subtotal: 35 horas</p>
+
+<b>3 - Criação e Acompanhamento de Plano de Estudos:</b>
+<ul>
+  <li>Desenvolvimento da interface de criação de planos de estudos: 25 horas</li>
+  <li>Implementação da interface de adição de recursos aos planos de estudos: 15 horas</li>
+  <li>Desenvolvimento da interface de acompanhamento do progresso: 20 horas</li>
+</ul>
+<p>Subtotal: 60 horas</p>
+
+<b>Total para o Desenvolvedor Frontend: 130 horas</b>
